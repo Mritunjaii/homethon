@@ -1,7 +1,8 @@
 const express=require('express');
-const qrcode = require('qrcode-terminal');
+// const qrcode = require('qrcode-terminal');
 const app=express();
 const axios = require('axios');
+const qrcode = require('qrcode');
 require('dotenv').config();
 
 const port=process.env.PORT;
@@ -13,8 +14,10 @@ const client = new Client({
     authStrategy: new LocalAuth()
 });
 
+let latestQR = null;
 client.on('qr', (qr) => {
-    qrcode.generate(qr, { small: true });
+    // qrcode.generate(qr, { small: true });
+    latestQR = qr;
     // Generate and scan this code with your phone
     console.log('QR RECEIVED', qr);
 });
@@ -31,6 +34,12 @@ app.post('/webhook',express.json(),async (req,res)=>{
         res.status(500).send('Failed to send message');
     }
 })
+
+app.get('/qr', async (req, res) => {
+    if (!latestQR) return res.send("QR not generated yet.");
+    const qrImage = await qrcode.toDataURL(latestQR);
+    res.send(`<h2>Scan this QR in WhatsApp</h2><img src="${qrImage}" />`);
+});
 
 
 client.on('message',async (msg) => {

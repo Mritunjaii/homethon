@@ -1,0 +1,60 @@
+2025/09/15-23:09:24.751 42a8 Reusing MANIFEST D:\bramhmaastra\homethon_wa\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/09/15-23:09:24.752 42a8 Recovering log #826
+2025/09/15-23:09:24.772 42a8 Reusing old log D:\bramhmaastra\homethon_wa\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000826.log 
+2025/09/15-23:09:25.910 4c34 Compacting 1@1 + 9@2 files
+2025/09/15-23:09:26.041 4c34 Generated table #831@1: 74653 keys, 2237727 bytes
+2025/09/15-23:09:26.148 4c34 Generated table #832@1: 37648 keys, 2196152 bytes
+2025/09/15-23:09:26.265 4c34 Generated table #833@1: 43810 keys, 2205380 bytes
+2025/09/15-23:09:26.410 4c34 Generated table #834@1: 1343 keys, 2144506 bytes
+2025/09/15-23:09:26.517 4c34 Generated table #835@1: 1470 keys, 2143196 bytes
+2025/09/15-23:09:26.590 4c34 Generated table #836@1: 2111 keys, 2143229 bytes
+2025/09/15-23:09:26.713 4c34 Generated table #837@1: 15414 keys, 2196629 bytes
+2025/09/15-23:09:26.724 4c34 Level-0 table #840: started
+2025/09/15-23:09:26.752 4c34 Level-0 table #840: 84346 bytes OK
+2025/09/15-23:09:26.779 4c34 Delete type=0 #826
+2025/09/15-23:09:26.876 4c34 Generated table #838@1: 26649 keys, 2227140 bytes
+2025/09/15-23:09:27.060 4c34 Generated table #841@1: 33202 keys, 2248607 bytes
+2025/09/15-23:09:27.099 4c34 Generated table #842@1: 1967 keys, 325375 bytes
+2025/09/15-23:09:27.099 4c34 Compacted 1@1 + 9@2 files => 20067941 bytes
+2025/09/15-23:09:27.137 4c34 compacted to: files[ 1 1 20 0 0 0 0 ]
+2025/09/15-23:09:27.137 1e6c Manual compaction at level-0 from '\x00'\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00(\x00\x00\x00' @ 0 : 0; will stop at '\x00'\x00\x00\x05' @ 3198373 : 1
+2025/09/15-23:09:27.137 1e6c Compacting 1@0 + 1@1 files
+2025/09/15-23:09:27.177 1e6c Generated table #843@0: 5552 keys, 61010 bytes
+2025/09/15-23:09:27.216 1e6c Generated table #844@0: 138 keys, 10894 bytes
+2025/09/15-23:09:27.216 1e6c Compacted 1@0 + 1@1 files => 71904 bytes
+2025/09/15-23:09:27.242 1e6c compacted to: files[ 0 2 20 0 0 0 0 ]
+2025/09/15-23:09:27.243 1e6c Delete type=2 #840
+2025/09/15-23:09:27.243 1e6c Manual compaction at level-0 from '\x00'\x00\x00\x05' @ 3198373 : 1 .. '\x00(\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/09/15-23:09:28.319 3714 Compacting 1@1 + 9@2 files
+2025/09/15-23:09:28.450 3714 Generated table #845@1: 72099 keys, 2237896 bytes
+2025/09/15-23:09:28.556 3714 Generated table #846@1: 46290 keys, 2206687 bytes
+2025/09/15-23:09:28.647 3714 Generated table #847@1: 33274 keys, 2193661 bytes
+2025/09/15-23:09:28.721 3714 Generated table #848@1: 1370 keys, 2143729 bytes
+2025/09/15-23:09:28.783 3714 Generated table #849@1: 1639 keys, 2143953 bytes
+2025/09/15-23:09:28.856 3714 Generated table #850@1: 2120 keys, 2145337 bytes
+2025/09/15-23:09:28.953 3714 Generated table #851@1: 17797 keys, 2212072 bytes
+2025/09/15-23:09:29.070 3714 Generated table #852@1: 30970 keys, 2222042 bytes
+2025/09/15-23:09:29.166 3714 Generated table #853@1: 26212 keys, 1993020 bytes
+2025/09/15-23:09:29.166 3714 Compacted 1@1 + 9@2 files => 19498397 bytes
+2025/09/15-23:09:29.202 3714 compacted to: files[ 0 1 20 0 0 0 0 ]
+2025/09/15-23:09:29.203 3714 Delete type=2 #816
+2025/09/15-23:09:29.203 3714 Delete type=2 #817
+2025/09/15-23:09:29.203 3714 Delete type=2 #818
+2025/09/15-23:09:29.203 3714 Delete type=2 #819
+2025/09/15-23:09:29.203 3714 Delete type=2 #820
+2025/09/15-23:09:29.203 3714 Delete type=2 #821
+2025/09/15-23:09:29.203 3714 Delete type=2 #822
+2025/09/15-23:09:29.203 3714 Delete type=2 #823
+2025/09/15-23:09:29.203 3714 Delete type=2 #824
+2025/09/15-23:09:29.204 3714 Delete type=2 #828
+2025/09/15-23:09:29.204 3714 Delete type=2 #829
+2025/09/15-23:09:29.204 3714 Delete type=2 #831
+2025/09/15-23:09:29.204 3714 Delete type=2 #832
+2025/09/15-23:09:29.204 3714 Delete type=2 #833
+2025/09/15-23:09:29.204 3714 Delete type=2 #834
+2025/09/15-23:09:29.204 3714 Delete type=2 #835
+2025/09/15-23:09:29.204 3714 Delete type=2 #836
+2025/09/15-23:09:29.204 3714 Delete type=2 #837
+2025/09/15-23:09:29.204 3714 Delete type=2 #838
+2025/09/15-23:09:29.204 3714 Delete type=2 #841
+2025/09/15-23:09:29.204 3714 Delete type=2 #843

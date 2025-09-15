@@ -20,13 +20,26 @@ client.on('qr', (qr) => {
 });
 
 
+app.post('/webhook',express.json(),async (req,res)=>{
+    const { to, message } = req.body;
+    console.log(to,message);
+    try {
+        await client.sendMessage(to, message);
+        res.status(200).send('Message sent');
+    } catch (error) {
+        console.error('Error sending message:', error);
+        res.status(500).send('Failed to send message');
+    }
+})
+
+
 client.on('message',async (msg) => {
     
     console.log(msg);
     console.log('Message received:', msg);
 
     try {
-        const response = await axios.post('https://n8n.brahmaastra.ai/webhook/03087def-ea2e-443c-8bf4-4921eb6ec5a4', {
+        await axios.post('https://n8n.brahmaastra.ai/webhook/03087def-ea2e-443c-8bf4-4921eb6ec5a4', {
             from: msg.from,
             to: msg.to,
             body: msg.body,
@@ -34,7 +47,6 @@ client.on('message',async (msg) => {
             timestamp: msg.timestamp,
             id: msg.id.id
         });
-        console.log(' n8n response:', response.data);
         console.log(' Sent to n8n webhook');
     } catch (error) {
         console.error(' Failed to send to n8n:', error.message);

@@ -5,13 +5,15 @@ const axios = require('axios');
 const qrcode = require('qrcode');
 require('dotenv').config();
 
-const port=process.env.PORT;
+const port=process.env.PORT || 3000;
 
 
 const { Client,LocalAuth } = require('whatsapp-web.js');
 
 const client = new Client({
-    authStrategy: new LocalAuth()
+    authStrategy: new LocalAuth({
+        dataPath: './sessions'   // must match Render disk mount path
+    })
 });
 
 let latestQR = null;
@@ -61,6 +63,14 @@ client.on('message',async (msg) => {
         console.error(' Failed to send to n8n:', error.message);
     }
 
+});
+
+
+
+process.on('SIGTERM', () => {
+    console.log('Shutting down...');
+    client.destroy();
+    process.exit(0);
 });
 
 client.initialize();

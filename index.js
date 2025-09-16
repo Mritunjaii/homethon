@@ -16,12 +16,12 @@ const client = new Client({
     }),
     puppeteer: {
     headless: true,
+    executablePath:'/usr/bin/chromium-browser',
     args: [
       '--no-sandbox',
       '--disable-setuid-sandbox',
       '--disable-dev-shm-usage',
       '--disable-accelerated-2d-canvas',
-      '--no-first-run',
       '--no-zygote',
       '--single-process', 
       '--disable-gpu'
@@ -37,6 +37,10 @@ client.on('qr', (qr) => {
     console.log('QR RECEIVED', qr);
 });
 
+
+app.get('/',(req,res)=>{
+    res.send('server is running.....');
+});
 
 app.post('/webhook',express.json(),async (req,res)=>{
     const { to, message } = req.body;
